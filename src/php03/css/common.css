@@ -1,0 +1,26 @@
+
+/* 共通のデザインだけここに書くんだよ */
+
+.header {
+    background: #000;;
+}
+
+.header__inner {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    /* FlexboxやGridレイアウトで、要素を交差軸の中央に揃える */
+    align-items: center;
+    /* 下記3つの設定をすると、画面が広くてもヘッダーのコンテンツが中央にまとまるので、デザインが崩れにくくなります。 */
+    max-width: 1230px;
+    margin: 0 auto; /* 中央揃え */
+    padding: 0 20px; /* 左右の余白 */
+}
+
+.header__logo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
